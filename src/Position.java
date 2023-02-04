@@ -1,8 +1,10 @@
+import java.util.Scanner;
 
 public class Position {
 
 	int row;
 	int col;
+	int a;
 	
 	void rowCol(int a)
 	{
@@ -50,6 +52,12 @@ public class Position {
 		{
 			row=2;
 			col=2;
+		}
+		else {
+			System.out.println("\n\n!!Invalid Entry,, please enter the valid position..\n\n");
+			Scanner scan = new Scanner(System.in);
+			this.a = scan.nextInt();
+			rowCol(this.a);
 		}
 	}
 }
