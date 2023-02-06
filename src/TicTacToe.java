@@ -8,15 +8,14 @@ public class TicTacToe
 		Scanner scan=new Scanner(System.in);
 		
 		System.out.println("player1 choose 'x' or 'o'");
-		char y=scan.next().charAt(0);//remember this how to take character input.
-		char p1=y;
+		char p1=scan.next().charAt(0);//remember this how to take character input.
 		char p2;
-		if ( y=='o')
+		if ( p1=='o')
 			p2='x';
 		else
 			p2='o';
 		
-		Position obj=new Position();
+		CheckBlank obj1=new CheckBlank();
 			
 		for (int row=0; row<3; row++)
 		{
@@ -33,9 +32,10 @@ public class TicTacToe
 		
 		for(int i=0; i<9; i++)
 		{
-			System.out.println("player1 put your symbol "+p1);
-			obj.rowCol(scan.nextInt());
-			arr[obj.row][obj.col]=p1;
+			System.out.println("player1 enter position for symbol "+p1);
+			
+			obj1.checker(arr,p1);
+			System.out.println("\n");
 			
 			for (int row=0; row<3; row++)
 			{
@@ -46,6 +46,8 @@ public class TicTacToe
 				System.out.println();
 
 			}
+			System.out.println("\n");
+
 			
 			if(arr[0][0]==arr[0][1] && arr[0][0]==arr[0][2] && arr[0][0]!='_')
 			{
@@ -120,9 +122,11 @@ public class TicTacToe
 			}
 			
 			
-			System.out.println("player2 put your symbol "+p2);
-			obj.rowCol(scan.nextInt());
-			arr[obj.row][obj.col]=p2;
+			System.out.println("player2 enter position for "+p2);
+			
+			obj1.checker(arr,p2);
+			System.out.println("\n");
+
 			
 			for (int row=0; row<3; row++)
 			{
@@ -133,6 +137,8 @@ public class TicTacToe
 				System.out.println();
 
 			}
+			System.out.println("\n");
+
 			
 			if(arr[0][0]==arr[0][1] && arr[0][0]==arr[0][2] && arr[0][0]!='_')
 			{

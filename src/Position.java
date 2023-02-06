@@ -6,7 +6,7 @@ public class Position {
 	int col;
 	int a;
 	
-	void rowCol(int a)
+	public void rowCol(int a)
 	{
 		if(a==1)
 			{
