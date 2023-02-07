@@ -10,6 +10,9 @@ public class TicTacToe
 		System.out.println("player1 choose 'x' or 'o'");
 		int winner=1;
 		int repeat=5;
+		int p1win=0;
+		int p2win=0;
+		
 		System.out.println("this game will repeat 5 times");
 		char p1=scan.next().charAt(0);//remember this how to take character input.
 		char p2;
@@ -64,11 +67,14 @@ public class TicTacToe
 					{
 						System.out.println("............player 1 won............");
 						winner=1;
+						p1win++;
 					}
 				if (arr[0][1]==p2)
 					{
 						System.out.println("............player 2 won............");
 						winner=2;
+						p2win++;
+
 					}
 				break;
 			}
@@ -79,11 +85,14 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
+
 				}				
 				if (arr[1][0]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -93,11 +102,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				
 				if (arr[2][0]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -107,10 +118,12 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				if (arr[0][0]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -120,11 +133,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				
 				if (arr[2][1]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -134,11 +149,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				
 				if (arr[0][2]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -148,11 +165,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				
 				if (arr[2][2]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -162,11 +181,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				
 				if (arr[2][0]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			else if(i==8)
@@ -210,11 +231,13 @@ public class TicTacToe
 					{
 						System.out.println("............player 1 won............");
 						winner=1;
+						p1win++;
 					}
 				if (arr[0][1]==p2)
 					{
 						System.out.println("............player 2 won............");
 						winner=2;
+						p2win++;
 					}
 				break;
 			}
@@ -225,11 +248,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				
 				if (arr[1][0]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -239,11 +264,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				
 				if (arr[2][0]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -253,11 +280,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}			
 				if (arr[0][0]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -267,11 +296,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}			
 				if (arr[2][1]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -281,11 +312,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				
 				if (arr[0][2]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -295,11 +328,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				
 				if (arr[2][2]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			
@@ -309,11 +344,13 @@ public class TicTacToe
 				{
 					System.out.println("............player 1 won............");
 					winner=1;
+					p1win++;
 				}				
 				if (arr[2][0]==p2)
 				{
 					System.out.println("............player 2 won............");
 					winner=2;
+					p2win++;
 				}				break;
 			}
 			else if(i==8)
@@ -324,8 +361,11 @@ public class TicTacToe
 			}
 			i++;
 			
+			
 		}while(i<9);
-
+		
+		System.out.println("player one won "+p1win+" times"); 
+		System.out.println("player two won "+p2win+" times");
 		}
 	}
 }
