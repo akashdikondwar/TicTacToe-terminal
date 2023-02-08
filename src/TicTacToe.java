@@ -6,14 +6,15 @@ public class TicTacToe
 	{
 		char arr[][]=new char[3][3];
 		Scanner scan=new Scanner(System.in);
-		
+		System.out.println("How many times you want to repeat the game? \n");
+		int repeat=scan.nextInt();
+		System.out.println("OK \n");
+
 		System.out.println("player1 choose 'x' or 'o'");
 		int winner=1;
-		int repeat=5;
 		int p1win=0;
 		int p2win=0;
 		
-		System.out.println("this game will repeat 5 times");
 		char p1=scan.next().charAt(0);//remember this how to take character input.
 		char p2;
 		if ( p1=='o')
@@ -193,7 +194,7 @@ public class TicTacToe
 			else if(i==8)
 			{
 				System.out.println("its a tie");
-				winner=1;
+				winner=2;
 			}
 			i++;
 			}
@@ -356,7 +357,7 @@ public class TicTacToe
 			else if(i==8)
 			{
 				System.out.println("its a tie");
-				winner=1;
+				winner=2;
 			}
 			}
 			i++;
@@ -364,8 +365,9 @@ public class TicTacToe
 			
 		}while(i<9);
 		
+	
+		}
 		System.out.println("player one won "+p1win+" times"); 
 		System.out.println("player two won "+p2win+" times");
-		}
 	}
 }
